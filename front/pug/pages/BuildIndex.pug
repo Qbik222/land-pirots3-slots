@@ -1,16 +1,54 @@
 .land
+    .land__overlay
+        .popup
+            .popup__body
+                .popup__pers
+                    picture
+                        source(srcset="./img/popup/popup-pers-mob.png" media="(max-width: 600px) and (orientation: portrait)")
+                        img(src="./img/popup/popup-pers.png" alt="favbet")
+                    .popup__pers-bulb так тримати!
+                .popup__title Ти виграв <br> можливість отримати
+                .popup__subtitle бонус
+                .popup__prize
+                    .popup__prize-item #[span до] 15 000
+                    .popup__prize-item + 300 fs
+                .popup__btn забирай бонус
     .land__logo
         img(src="./img/logo.png" alt="favbet")
-    //.land__left
-    //    .land__title До нових висот з бонусом*
-    //    .land__prize 15 000₴
-    //    .land__spins + 300 фрiспiнiв
-    //    .land__btn хапай штурвал
-    //.land__right
-    //    .land__right-pers
-    //        img(src="./img/pers.png" alt="favbet")
-    //    .land__right-plane
-    //        img(src="./img/plane.png" alt="favbet")
+    .land__title
+        .land__title-item
+            picture
+                source(srcset="./img/title-top-mob.png" media="(max-width: 1300px) and (orientation: portrait)")
+                img(src="./img/title-top.png" alt="Вигравай")
+        .land__title-item
+            picture
+                source(srcset="./img/title-bottom-mob.png" media="(max-width: 1300px) and (orientation: portrait)")
+                img(src="./img/title-bottom.png" alt="Бонус")
+    .land__pers
+        picture
+            source(srcset="./img/pers-mob.png" media="(max-width: 600px) and (orientation: portrait)")
+            img(src="./img/pers.png" alt="Бонус")
+        .land__pers-bulb маєш <br> одну <br> спробу
+    .land__main-wrapper
+        .play-btn.pulse-btn старт
+        .land__main-slots
+            .land__main-slots-logo
+                picture
+                    source(srcset="./img/slots/slot-logo-mob.png" media="(max-width: 600px) and (orientation: portrait)")
+                    img(src="../img/slots/slot-logo.png" alt="Pirots3")
+            .slots
+                .window
+                    .outer-col.outer-col-win
+                        .col
+                    .outer-col
+                        .col
+                    .outer-col
+                        .col
+                    .outer-col
+                        .col
+                    .outer-col
+                        .col
+    .land__bottom-txt * Під бонусом розуміється можливість отримати приз в рамках акції «Вітальний бонус». Період дії акції з 01.09.2024 по 31.12.2024 року. Бонус доступний тільки для нових клієнтів. Деталі на сайті favbet.ua. 
 .footer
     .footer__text  ТОВ «БУКМЕКЕРСЬКА КОМПАНІЯ «ФАВБЕТ». Ліцензія на провадження діяльності з організації та проведення букмекерської діяльності від 28.12.2022, видана згідно з рішенням КРАІЛ № 433 від 13.12.2022 та Ліцензія на провадження діяльності з організації та проведення азартних ігор казино в мережі Інтернет від 20.04.2021, видана згідно з рішенням КРАІЛ № 137 від 05.04.2021, зі змінами.
     .footer__wrap
