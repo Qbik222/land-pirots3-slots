@@ -1,10 +1,13 @@
+button.popup-btn popup
+a(href="https://tds.favbet.partners").all-link
 .land
-    .land__overlay
+    .land__overlay._opacity-overlay
         .popup
             .popup__body
                 .popup__pers
                     picture
                         source(srcset="./img/popup/popup-pers-mob.png" media="(max-width: 600px) and (orientation: portrait)")
+                        source(srcset="./img/popup/popup-pers-mob.png" media="(max-width: 950px) and (orientation: landscape) and (max-height: 450px")
                         img(src="./img/popup/popup-pers.png" alt="favbet")
                     .popup__pers-bulb так тримати!
                 .popup__title Ти виграв <br> можливість отримати
@@ -12,7 +15,7 @@
                 .popup__prize
                     .popup__prize-item #[span до] 15 000
                     .popup__prize-item + 300 fs
-                .popup__btn забирай бонус
+                a(href="https://tds.favbet.partners").popup__btn забирай бонус
     .land__logo
         img(src="./img/logo.png" alt="favbet")
     .land__title
@@ -27,6 +30,7 @@
     .land__pers
         picture
             source(srcset="./img/pers-mob.png" media="(max-width: 600px) and (orientation: portrait)")
+            source(srcset="./img/pers-mob.png" media="(max-width: 950px) and (orientation: landscape) and (max-height: 450px)")
             img(src="./img/pers.png" alt="Бонус")
         .land__pers-bulb маєш <br> одну <br> спробу
     .land__main-wrapper

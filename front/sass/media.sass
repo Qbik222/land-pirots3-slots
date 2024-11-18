@@ -5,8 +5,12 @@
       margin-top: 200px
   .popup
     transform: scale(.9) translate(-50%, -50%)
-    transform-origin: bottom center
+    transform-origin: bottom left
 
+@media screen and (max-width: 1720px) and (min-height: 1270px) and (orientation: landscape)
+  .land
+    &__title
+      margin-top: 360px
 
 @media screen and (max-width: 1720px) and (max-height: 910px)
   .land
@@ -22,41 +26,6 @@
       &-wrapper
         transform: scale(.9)
 
-// popup
-
-@media screen and (max-height: 870px)
-  .popup
-    transform: scale(.8) translate(-50%, -50%)
-    transform-origin: center
-
-
-@media screen and (max-width: 1150px) and (max-height: 850px)
-  .popup
-    transform: scale(.8) translate(-60%, -50%)
-
-@media screen and (max-height: 780px)
-  .popup
-    transform: scale(.7) translate(-65%, -65%)
-
-@media screen and (max-height: 740px)
-  .popup
-    transform: scale(.65) translate(-70%, -65%)
-
-@media screen and (max-height: 640px)
-  .popup
-    transform: scale(.6) translate(-70%, -75%)
-
-@media screen and (max-width: 1220px) and (max-height: 600px)
-  .popup
-    transform: scale(.6) translate(-75%, -75%)
-
-@media screen and (max-width: 900px) and (orientation: portrait)
-  .popup
-    transform: scale(.7) translate(-50%, -50%)
-    transform-origin: top left
-
-// popup
-
 @media screen and (max-width: 1720px) and (max-height: 830px)
   .land
     &__title
@@ -69,8 +38,6 @@
     &__main
       &-wrapper
         transform: scale(.85)
-
-
 
 @media screen and (max-width: 1720px) and (max-height: 770px)
   .land
@@ -298,6 +265,7 @@
   .footer
     &__text
       font-size: 11px
+      line-height: 15px
 
 
 @media screen and (max-width: 1300px) and (orientation: portrait)
@@ -443,23 +411,23 @@
     &__title
       margin-top: 60px
 
-@media screen and (max-width: 850px) and (max-height: 550px) and (min-height: 500px) and (orientation: landscape)
+@media screen and (max-width: 660px) and (max-height: 700px) and (orientation: portrait) and (min-width: 610px)
   .land
-    &__logo
-      max-width: 220px
-    &__title
-      margin: 130px -100px 0 40px
     &__main
       &-wrapper
-        transform: scale(.5)
-        margin: 0 30px 0 -330px
+        transform: scale(.45)
+        margin-top: 50px
     &__pers
-      max-width: 240px
-      left: 330px
-      top: 250px
-      &-bulb
-        display: none
-
+      top: 100px
+      left: 70px
+      max-width: 180px
+    &__title
+      max-width: 300px
+      &-item
+        &:nth-child(2)
+          max-width: 200px
+  .popup
+    transform: scale(.6) translate(-50%, -50%)
 
 @media screen and (max-width: 600px) and (orientation: portrait)
   .land
@@ -527,6 +495,11 @@
       height: 49px
   .legal
     font-size: 6.7vw
+
+@media screen and (max-width: 540px) and (min-width: 500px) and (orientation: portrait)
+  .land
+    &__pers
+      right: 20px
 
 @media screen and (max-width: 400px) and (orientation: portrait)
   .land
@@ -598,16 +571,279 @@
       &-wrapper
         transform: scale(.32)
 
+@media screen and (max-width: 320px) and (orientation: portrait) and (max-height: 570px)
+  .land
+    &__pers
+      top: 135px
+      right: -35px
+      max-width: 170px
+
+
+
 
 @media screen and (max-width: 950px) and (max-height: 450px) and (orientation: landscape)
   .land
     height: calc(100% - 80px)
+    &::after
+      width: 325px
+      height: 380px
     &__logo
       max-width: 170px
+    &__main
+      &-wrapper
+        transform: scale(.4)
+        margin-top: 20px
+        margin-left: -570px
+    &__title
+      max-width: 300px
+      margin-top: 90px
+      &::after
+        width: 105px
+        height: 110px
+        bottom: -25px
+    &__pers
+      left: 47%
+      transform: translateX(-50%)
+      max-width: 230px
+      top: auto
+      bottom: -70px
+      &-bulb
+        display: none
+    &__bottom-txt
+      font-size: 8px
+      line-height: 10px
+      bottom: 5px
+      max-width: 90%
   .footer
     height: 80px
     &__text
       font-size: 8px
-      line-height: 14px
+      line-height: 12px
     &__wrap
       margin-left: 10px
+
+@media screen and (max-width: 950px) and (max-height: 400px) and (orientation: landscape)
+  .land
+    &__main
+      &-wrapper
+        transform: scale(.35)
+        margin-top: 0
+    &__title
+      margin-top: 70px
+
+@media screen and (max-width: 950px) and (max-height: 370px) and (orientation: landscape)
+  .land
+    &__main
+        &-wrapper
+          transform: scale(.32)
+    &__title
+      max-width: 240px
+      &-item
+        &:nth-child(2)
+          max-width: 200px
+          margin-top: 5px
+    &__pers
+      max-width: 200px
+      bottom: -60px
+
+@media screen and (max-width: 950px) and (max-height: 350px) and (orientation: landscape)
+  .land
+    &__main
+      &-wrapper
+        transform: scale(.3)
+
+@media screen and (max-width: 950px) and (max-height: 325px) and (orientation: landscape)
+  .land
+    &__logo
+      max-width: 140px
+    &__main
+      &-wrapper
+        transform: scale(.26)
+    &__title
+      margin-top: 60px
+
+@media screen and (max-width: 850px) and (max-height: 550px) and (min-height: 500px) and (orientation: landscape)
+  .land
+    &__logo
+      max-width: 220px
+    &__title
+      margin: 130px -100px 0 40px
+    &__main
+      &-wrapper
+        transform: scale(.5)
+        margin: 0 30px 0 -330px
+    &__pers
+      max-width: 240px
+      left: 330px
+      top: 250px
+      &-bulb
+        display: none
+
+@media screen and (max-width: 720px) and (max-height: 540px) and (orientation: landscape) and (min-height: 500px)
+  .land
+    &__main
+      &-wrapper
+        transform: scale(.4)
+        margin-left: -420px
+
+@media screen and (max-width: 700px) and (orientation: landscape) and (max-height: 660px) and (min-width: 645px) and (min-height: 590px)
+  .land
+    &__main
+      &-wrapper
+        transform: scale(.4) translateX(-20px)
+        margin-left: -510px
+        margin-top: 20px
+    &__title
+      margin-top: 210px
+      margin-left: 20px
+    &__pers
+      top: auto
+      bottom: -90px
+      max-width: 280px
+      left: 50%
+      &-bulb
+        display: none
+@media screen and (max-width: 700px) and (max-height: 400px) and (orientation: landscape)
+  .land
+    &__title
+      &-item
+        max-width: 240px
+        &:nth-child(2)
+          max-width: 200px
+
+
+@media screen and (max-width: 600px) and (max-height: 376px) and (orientation: landscape)
+  .land
+    &__main
+      &-wrapper
+        transform: scale(.3)
+        margin-left: -640px
+    &__pers
+      max-width: 200px
+      bottom: -50px
+
+@media screen and (max-width: 600px) and (max-height: 320px) and (orientation: landscape)
+  .land
+    &__main
+      &-wrapper
+        transform: scale(.28)
+    &__pers
+      max-width: 170px
+
+
+
+
+// popup
+
+@media screen and (max-height: 870px)
+  .popup
+    transform: scale(.8) translate(-50%, -50%)
+    transform-origin: center left
+
+
+@media screen and (max-width: 1150px) and (max-height: 850px)
+  .popup
+    transform: scale(.8) translate(-60%, -50%)
+
+@media screen and (max-height: 780px)
+  .popup
+    transform: scale(.7) translate(-65%, -65%)
+    transform-origin: center
+
+@media screen and (max-height: 740px)
+  .popup
+    transform: scale(.65) translate(-70%, -65%)
+
+@media screen and (max-height: 640px)
+  .popup
+    transform: scale(.6) translate(-70%, -75%)
+
+@media screen and (max-width: 1220px) and (max-height: 600px)
+  .popup
+    transform: scale(.6) translate(-75%, -75%)
+
+@media screen and (max-width: 900px) and (orientation: portrait)
+  .popup
+    transform: scale(.7) translate(-50%, -50%)
+    transform-origin: top left
+
+@media screen and (max-width: 850px) and (max-height: 550px) and (min-height: 500px) and (orientation: landscape)
+  .popup
+    transform: scale(.5) translate(-50%, -40%)
+    transform-origin: top left
+
+@media screen and (max-width: 600px) and (orientation: portrait), screen and (max-width: 950px) and (max-height: 450px) and (orientation: landscape)
+  .popup
+    transform: scale(1) translate(-50%, -50%)
+    width: 360px
+    height: 320px
+    &::before, &::after
+      content: none
+    &__body
+      width: 360px
+      height: 380px
+      padding-top: 50px
+      &::before
+        width: 280px
+        height: 17px
+        top: 133px
+      &::after
+        width: 260px
+        bottom: 65px
+        height: 19px
+    &__pers
+      max-width: 160px
+      top: 10px
+      left: 30%
+      &-bulb
+        width: 172px
+        height: 68px
+        font-size: 15px
+        padding-top: 18px
+        right: 10px
+    &__title
+      font-size: 16px
+    &__subtitle
+      width: 115px
+      min-height: 80px
+      font-size: 20px
+      margin-top: 10px
+    &__prize
+      margin: 0
+      &-item
+        font-size: 40px
+        line-height: 40px
+        &:nth-child(1)
+          span
+            font-size: 18px
+            margin: 15px 5px 0 0
+    &__btn
+      width: 276px
+      min-height: 69px
+      font-size: 20px
+      margin-top: 55px
+
+@media screen and (max-width: 360px)
+  .popup
+    transform: scale(.9) translate(-50%, -50%)
+    transform-origin: left top
+
+@media screen and (max-width: 325px)
+  .popup
+    transform: scale(.8) translate(-50%, -50%)
+
+@media screen and (max-width: 950px) and (max-height: 450px) and (orientation: landscape)
+  .popup
+    transform: scale(.7) translate(-50%, -50%)
+    transform-origin: left top
+
+@media screen and (max-width: 950px) and (max-height: 360px) and (orientation: landscape)
+  .popup
+    transform: scale(.6) translate(-50%, -50%)
+
+@media screen and (max-width: 950px) and (max-height: 325px) and (orientation: landscape)
+  .popup
+    transform: scale(.57) translate(-50%, -50%)
+
+// popup
+
