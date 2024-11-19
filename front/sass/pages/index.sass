@@ -1,7 +1,5 @@
 $blue: #000055
 $white: #ffffff
-$magenta: #FF267E
-$green: #3AFFC3
 $black: #14110C
 $purple: #2D1A2D
 $brown: #431D00
@@ -11,14 +9,6 @@ $font-legal: DINPro-CondLight, sans-serif
 $font-roboto-slab-reg: RobotoSlab-Regular, sans-serif
 $font-roboto-slab-med: RobotoSlab-Medium, sans-serif
 $font-roboto-slab-bold: RobotoSlab-Bold, sans-serif
-
-.popup-btn
-  z-index: 9
-  position: fixed
-  top: 0
-  left: 0
-  width: 50px
-  height: 20px
 
 .all-link
   position: fixed
@@ -38,7 +28,6 @@ body
   position: relative
   display: flex
   justify-content: space-between
-  //padding: 0 50px
   align-items: center
   overflow: hidden
   background: url("../img/bg.jpg") no-repeat 50% 100%/cover
@@ -48,7 +37,6 @@ body
     background: url("../img/bg-mob.jpg") no-repeat 50% 50%/cover
   @media screen and (max-width: 950px) and (orientation: landscape) and (max-height: 450px)
     background: url("../img/bg-landscape.jpg") no-repeat 50% 50%/cover
-
   &::before, &::after
     display: block
     position: absolute
@@ -88,22 +76,10 @@ body
       top: 50px
       left: 40px
       z-index: 1
-    //&-slot-logo
-    //  width: 800px
-    //  height: 148px
-    //  background: url("../img/slots/slots-logo.png") no-repeat 0 0/contain
-    //  position: absolute
-    //  top: 0
-    //  left: 50%
-    //  transform: translate(-50%, -80%)
-    //  z-index: 8
-    //  @media screen and (max-width: 600px)
-    //    background: url("../img/slots/slots-logo-mob.png") no-repeat 0 0/contain
     &-txt
       margin-top: 90px
       z-index: 5
       position: relative
-      //font-family: $font-lilita-one
       font-size: 100px
       line-height: 108px
       align-self: flex-start
@@ -117,10 +93,8 @@ body
         position: relative
       &::before
         content: attr(data-before)
-        //color: transparent
         font-size: inherit
         font-family: inherit
-        //text-shadow: 0px 2px 2px rgba(18, 15, 10, 0.80)
         color: $purple
         z-index: 1
         position: absolute
@@ -130,7 +104,6 @@ body
         top: 0
         text-transform: uppercase
         -webkit-text-stroke-width: 21px
-
       &::after
         content: attr(data-after)
         font-size: inherit
@@ -145,24 +118,17 @@ body
         bottom: 0
         text-transform: uppercase
     &-image
-      animation: 3s infinite zevs ease
       position: absolute
       max-width: 720px
       bottom: 0
       left: 46%
       transform: translateX(-50%)
       z-index: 1
-    //picture
-    //  height: 100%
-    //  position: absolute
-    //  top: 0
     &-wrapper
       transform-origin: right center
-      //transform: scale(.95)
       position: relative
       z-index: 4
       display: flex
-      //margin-top: 60px
       margin: 60px auto 0 auto
     &-slots
       position: relative
@@ -178,7 +144,6 @@ body
   &__title
     max-width: 665px
     align-self: flex-start
-    //margin-top: 260px
     margin: 260px auto 0 auto
     z-index: 1
     &::before
@@ -291,7 +256,6 @@ body
             opacity: 1
           .icon
             transition: opacity .4s ease-in-out
-
   &.afterSecondSpin
     .icon
       &-wrap
@@ -342,41 +306,6 @@ body
   &:hover
     cursor: pointer
     animation-play-state: paused
-  span
-    margin-top: -15px
-    //font-family: $font-roboto-condensed-reg
-    white-space: nowrap
-    font-size: 40px
-    line-height: 44px
-    letter-spacing: 0.03em
-    background: linear-gradient(180deg, #4E1802 35%, #4E1C00 58.49%, #EF631A 71.67%)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
-    background-clip: text
-    text-fill-color: transparent
-    position: relative
-    z-index: 3
-    top: 10px
-    padding: 1px
-    &::before
-      text-align: center
-      content: 'GO'
-      position: absolute
-      z-index: 1
-      left: 50%
-      transform: translateX(-50%)
-      top: -3px
-      //font-family: $font-roboto-condensed-reg
-      font-size: 40px
-      line-height: 44px
-      letter-spacing: 0.03em
-      background: linear-gradient(180deg, #FFF325 35%, #F89E0A 58.49%, #FFF325 71.67%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-      background-clip: text
-      text-fill-color: transparent
-      -webkit-text-stroke: 1px rgba(255, 255, 255, 1)
-      padding: 1px
 .outer-col
   width: 170px
   float: left
@@ -425,7 +354,6 @@ body
           animation: scroll-mob 3s cubic-bezier(.5,0,.5,1) 1
         @media screen and (max-width: 950px) and (orientation: landscape) and (max-height: 450px)
           animation: scroll-mob 3s cubic-bezier(.5,0,.5,1) 1
-
 .footer
   background: $blue
   height: 83px
@@ -465,7 +393,6 @@ body
     width: 128px
     height: 38px
     margin-left: 10px
-
 .legal
   font-family: $font-legal
   font-size: 4.7vw
@@ -474,7 +401,6 @@ body
   z-index: 2
   position: relative
   background: $white
-
 .popup
   position: absolute
   top: 50%
@@ -513,7 +439,6 @@ body
     @media screen and (max-width: 600px)
       background: url("../img/popup/popup-body-bg-mob.png") no-repeat 0 0/contain
       background-size: 100% 100%
-
     &::before
       content: ""
       display: block
@@ -559,7 +484,6 @@ body
       letter-spacing: .08em
       font-family: $font-roboto-slab-med
       opacity: 0
-      //opacity: 1
       transition: opacity 1.2s ease-in-out
   &__title
     color: $brown
@@ -631,7 +555,7 @@ body
     &:hover
       cursor: pointer
       animation-play-state: paused
-      //transform: scale(1.02)
+
 @keyframes scroll
   0%
     transform: translate3d(0,0,0)

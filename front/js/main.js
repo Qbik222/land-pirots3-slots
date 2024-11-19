@@ -7,7 +7,6 @@ const playBtn = document.querySelector('.play-btn'),
     popup = document.querySelector('.popup'),
     overflow = document.querySelector('body'),
     wrapper = document.querySelector('.land'),
-    // bubbleText = document.querySelector('.bonus__main-bubble'),
     winOuter = document.querySelector('.outer-col-win'),
     slotsWindow = document.querySelector(".window")
 
@@ -88,13 +87,6 @@ const colsImg3 = Array.from(cols[2].querySelectorAll('img'))
 const colsImg4 = Array.from(cols[3].querySelectorAll('img'))
 const colsImg5 = Array.from(cols[4].querySelectorAll('img'))
 
-const colsImg1Two = Array.from(cols[0].querySelectorAll('img'))
-const colsImg2Two = Array.from(cols[1].querySelectorAll('img'))
-const colsImg3Two = Array.from(cols[2].querySelectorAll('img'))
-const colsImg4Two = Array.from(cols[3].querySelectorAll('img'))
-const colsImg5Two = Array.from(cols[4].querySelectorAll('img'))
-
-
 let tries = 0;
 function spin() {
     //sounds
@@ -161,7 +153,6 @@ function spin() {
 }
 
 let triesCounter = 0
-// let babbleTextAfterRotation = 'Tienes una oportunidad, mortal'
 
 playBtn.addEventListener('click', () => {
     if (triesCounter === 0) {
@@ -205,22 +196,6 @@ cols.forEach(item => {
         // код для обычных устройств
         item.classList.remove('_ios')
     }
-
-// for test
-    document.querySelector(".popup-btn").addEventListener("click", () =>{
-        if(overlay.classList.contains("_opacity-overlay")){
-            displayPopup(popup)
-            setTimeout(() =>{
-                popup.querySelector(".popup__pers-bulb").classList.add("bulb-fadeIn")
-            }, 300)
-            return
-        }else{
-            overlay.classList.add("_opacity-overlay")
-            setTimeout(() =>{
-                popup.querySelector(".popup__pers-bulb").classList.remove("bulb-fadeIn")
-            }, 300)
-        }
-    })
 
 });
 
