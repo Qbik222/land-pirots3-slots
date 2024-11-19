@@ -90,6 +90,25 @@
       &-wrapper
         transform: scale(.77)
 
+@media screen and (max-width: 1500px) and (max-height: 710px) and (orientation: landscape)
+  .land
+    &__logo
+      max-width: 280px
+    &__main
+      &-wrapper
+        transform: scale(.64)
+    &__pers
+      max-width: 430px
+      bottom: -100px
+    &__title
+      max-width: 450px
+      &::after
+        width: 175px
+        height: 220px
+        left: -15px
+        bottom: -65px
+
+
 @media screen and (max-width: 1380px)
   .land
     &__pers
@@ -381,6 +400,29 @@
       width: 100%
       justify-content: space-between
 
+@media screen and (max-width: 900px) and (min-height: 1000px) and (orientation: portrait)
+  .land
+    &::after
+      width: 635px
+      height: 730px
+      right: -160px
+    &__title
+      max-width: 400px
+      &-item
+        &:nth-child(2)
+          max-width: 280px
+      &::after
+        width: 265px
+        height: 290px
+    &__main
+      &-wrapper
+        margin-top: 170px
+    &__pers
+      top: 190px
+//@media screen and (max-width: 900px) and (min-height: 1100px) and (orientation: portrait)
+//  .land
+
+
 @media screen and (max-width: 850px) and (max-height: 1100px) and (orientation: portrait)
   .land
     &__pers
@@ -390,6 +432,7 @@
       &-wrapper
         transform: scale(.7)
         margin-top: 90px
+
 
 @media screen and (max-width: 770px) and (orientation: portrait)
   .land
@@ -453,7 +496,7 @@
     &__main
       &-wrapper
         transform: scale(.43)
-        margin-top: 170px
+        margin-top: 160px
     &__pers
       max-width: 270px
       transform: scale(1)
@@ -495,6 +538,12 @@
       height: 49px
   .legal
     font-size: 6.7vw
+  .play-btn
+    background: url("../img/btn-bg-mob.png") no-repeat 0 0/cover
+    background-size: 100% 100%
+    width: 500px
+    height: 131px
+    bottom: -45px
 
 @media screen and (max-width: 540px) and (min-width: 500px) and (orientation: portrait)
   .land
@@ -545,6 +594,7 @@
 
 @media screen and (max-width: 360px) and (orientation: portrait)
   .land
+    height: 640px
     &__main
       &-wrapper
         transform: scale(.34)
@@ -561,15 +611,27 @@
 
 @media screen and (max-width: 360px) and (orientation: portrait) and (max-height: 640px)
   .land
+    height: 610px
     &__pers
       top: 145px
+
+@media screen and (max-width: 360px) and (orientation: portrait) and (max-height: 600px)
+  .land
+    height: 550px
+    &__pers
+      top: 115px
+      right: -35px
+      max-width: 200px
 
 
 @media screen and (max-width: 320px) and (orientation: portrait)
   .land
+    height: 600px
     &__main
       &-wrapper
         transform: scale(.32)
+    &__pers
+      top: 145px
 
 @media screen and (max-width: 320px) and (orientation: portrait) and (max-height: 570px)
   .land
@@ -662,6 +724,17 @@
     &__title
       margin-top: 60px
 
+@media screen and (max-width: 950px) and (max-height: 304px) and (orientation: landscape)
+  .land
+    &__main
+      &-wrapper
+        transform: scale(.22)
+    &__title
+      &::after
+        width: 65px
+        height: 80px
+        bottom: -20px
+
 @media screen and (max-width: 850px) and (max-height: 550px) and (min-height: 500px) and (orientation: landscape)
   .land
     &__logo
@@ -686,7 +759,7 @@
         transform: scale(.4)
         margin-left: -420px
 
-@media screen and (max-width: 700px) and (orientation: landscape) and (max-height: 660px) and (min-width: 645px) and (min-height: 590px)
+@media screen and (max-width: 710px) and (orientation: landscape) and (max-height: 660px) and (min-width: 645px) and (min-height: 590px)
   .land
     &__main
       &-wrapper
@@ -743,24 +816,25 @@
 
 @media screen and (max-width: 1150px) and (max-height: 850px)
   .popup
-    transform: scale(.8) translate(-60%, -50%)
+    transform: scale(.8) translate(-50%, -50%)
+    transform-origin: center left
 
 @media screen and (max-height: 780px)
   .popup
-    transform: scale(.7) translate(-65%, -65%)
-    transform-origin: center
+    transform: scale(.7) translate(-50%, -65%)
+    //transform-origin: center
 
 @media screen and (max-height: 740px)
   .popup
-    transform: scale(.65) translate(-70%, -65%)
+    transform: scale(.65) translate(-50%, -70%)
 
 @media screen and (max-height: 640px)
   .popup
-    transform: scale(.6) translate(-70%, -75%)
+    transform: scale(.6) translate(-50%, -75%)
 
 @media screen and (max-width: 1220px) and (max-height: 600px)
   .popup
-    transform: scale(.6) translate(-75%, -75%)
+    transform: scale(.58) translate(-50%, -77%)
 
 @media screen and (max-width: 900px) and (orientation: portrait)
   .popup
@@ -781,7 +855,8 @@
       content: none
     &__body
       width: 360px
-      height: 380px
+      max-height: 380px
+      min-height: 380px
       padding-top: 50px
       &::before
         width: 280px
